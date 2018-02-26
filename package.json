@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm-run-all test:*",
     "test:html": "globstar nu-html-checker *.html",
+    "test:jshint": "jshint js",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
@@ -32,6 +33,7 @@
     "nu-html-checker": "^0.1.0"
   },
   "dependencies": {
+    "jshint": "^2.9.5",
     "mkdirp": "^0.5.1",
     "npm-run-all": "^4.1.2",
     "onchange": "^3.3.0",
